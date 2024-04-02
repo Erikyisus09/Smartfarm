@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC Cleaner</title>
+<link rel="stylesheet" href=".\css\analizar.css">
+</head>
+<body>
+<div class="container">
+  <h1><img src=".\imagenes\smartfarm.jpg" alt=""></h1>
+  <div class="cleaner-box">
+    <h2>Análisis</h2>
+    <button id="analyzeButton">Analizar</button>
+    <div id="loadingAnimation" class="hidden">
+      <div class="spinner"></div>
+      <p>Realizando análisis...</p>
+    </div>
+    <div id="resultsSection" class="hidden">
+      <h2>Resultados del análisis</h2>
+      <div id="resultsContent">
+        <p>Se han encontrado <span id="filesCount">X</span> archivos innecesarios.</p>
+        <p>Se han liberado <span id="spaceFreed">Y</span> MB de espacio.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src=".\js\analizar.js"></script>
+</body>
+</html>
